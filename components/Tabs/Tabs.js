@@ -66,6 +66,5 @@ class TabItem {
 
 let links = document.querySelectorAll(".tabs-link");
 
-links = Array.from(links).map(item => new TabLink(item))
+links.forEach(item => new TabLink(item));
 
-console.log(links)
